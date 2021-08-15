@@ -1,0 +1,17 @@
+## Default Logstash configuration from logstash-docker.
+## from https://github.com/elastic/logstash-docker/blob/master/build/logstash/config/logstash.yml
+#
+node.name: "${NODE_NAME}"
+http.host: "0.0.0.0"
+
+## https://www.elastic.co/guide/en/logstash/7.12/monitoring-internal-collection-legacy.html
+## deprecated in 7.9.0 :
+#xpack.monitoring.elasticsearch.hosts: [ "${ELASTICSEARCH_URL}" ]
+#xpack.monitoring.elasticsearch.username: ${ELASTICSEARCH_USERNAME}
+#xpack.monitoring.elasticsearch.password: ${ELASTICSEARCH_PASSWORD}
+
+## Disable X-Pack
+## see https://www.elastic.co/guide/en/x-pack/current/xpack-settings.html
+##     https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html#xpack-enabling
+#
+#xpack.monitoring.enabled: true
