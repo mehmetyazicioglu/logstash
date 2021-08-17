@@ -1,2 +1,2 @@
 # logstash
-logstash
+Customized logstash image. 
