@@ -1,2 +1,2 @@
 # logstash
-Customized logstash image. 
+Customized logstash image from Elastico.
